@@ -6,211 +6,241 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Edgar Coime</title>
-
     <style>
-    @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
 
-    body {
-        background-color: whitesmoke;
-    }
+        body {
+            background-color: whitesmoke;
+        }
 
-    header li, header li a, header .logo {
+        header li, header li a, header .logo {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 25px;
         color: whitesmoke;
         text-decoration: none;
-    }
+        }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 10%;
-        background-color: darkslategrey;
-    }
+        .logo {
+            font-size: 35px;
+        }
 
-    .nav-links {
-        list-style: none;
-    }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: darkslategrey;
+        }
 
-    .nav-links li {
-        display: inline-block;
-        padding: 0px 10px;
-    }
+        .nav-links {
+            list-style: none;
+        }
 
-    .nav-links li a {
-        transition: all 0.1s ease 0s;
-    }
+        .nav-links li {
+            display: inline-block;
+            padding: 0px 10px;
+        }
 
-    .nav-links li a:hover {
-        color: skyblue;
-    }
+        .nav-links li a {
+            transition: all 0.1s ease 0s;
+        }
 
-    /* main content */
-    .main-content {
-        margin: 20px 10%;
-    }
+        .nav-links li a:hover {
+            color: skyblue;
+        }
 
-    .main-content img {
-        margin: auto;
-        display: block;
-        margin-bottom: 50px;
-        box-shadow: grey 2px 2px;
-    }
+        /* main content */
+        .main-content {
+            margin: 20px 10%;
+        }
 
-    .main-content p {
-        margin: 10px 5%;
-    }
+        .main-content img {
+            margin: auto;
+            display: block;
+            margin-bottom: 50px;
+            box-shadow: grey 2px 2px;
+        }
 
-    .main-content a {
-        margin: auto;
-        display: block;
-    }
+        .main-content p {
+            margin: 10px 5%;
+        }
 
-
-    /* list of courses styling */
-    .course-list h2 {
-        text-align: center;
-        font-size: 25px;
-        font-weight: 900;
-        margin-bottom: 40px;
-    }
-    .courses {
-        list-style: none;
-        padding: 20px;
-        margin: 20px 10%;
-    }
-
-    .courses a {
-        text-decoration: none;
-        color: black;
-    }
-
-    .courses li {
-        padding-bottom: 20px;
-        text-align: center;
-        color: black;
-        text-decoration: none;
-        font-weight: 600;
-
-    }
+        .main-content a {
+            margin: 20px 10%;
+            display: block;
+            text-align: center;
+        }
 
 
-    .class1 {
-        background-color: lightcoral;
-    }
+        /* list of courses styling */
+        .course-list h2 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 900;
+            margin-bottom: 40px;
+        }
+        .courses {
+            list-style: none;
+            padding: 20px;
+            margin: 20px 10%;
+        }
 
-    .class2 {
-        background-color: lightgoldenrodyellow;
-    }
+        .courses a {
+            text-decoration: none;
+            color: black;
+        }
 
-    .class3 {
-        background-color: lightgreen;
-    }
+        .courses li {
+            padding-bottom: 20px;
+            text-align: center;
+            color: black;
+            text-decoration: none;
+            font-weight: 600;
 
-    .class4 {
-        background-color: lightsalmon;
-    }
+        }
 
-    .class5 {
-        background-color: lightskyblue;
-        
-    }
 
-    .class6 {
-        background-color: lightseagreen;
-        
-    }
+        .class1 {
+            background-color: lightcoral;
+        }
 
-    .class7 {
-        background-color: lightpink;
-        
-    }
+        .class2 {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .class3 {
+            background-color: lightgreen;
+        }
+
+        .class4 {
+            background-color: lightsalmon;
+        }
+
+        .class5 {
+            background-color: lightskyblue;
+            
+        }
+
+        .class6 {
+            background-color: lightseagreen;
+            
+        }
+
+        .class7 {
+            background-color: lightpink;
+            
+        }
+
+        /* picture wrapper */
+
+        .collage-image {
+            width: 100%;
+        }
+        .picture-wrapper {
+            display: flex;
+            margin: 20px 5%;
+        }
+
+        .picture-wrapper h3 {
+            margin: 0 40px;
+            text-align: center;
+        }
+
+        .picture-group {
+            padding: 0 40px;
+        }
+            
     </style>
-
 </head>
 
 
 <body>
-<div class="wrapper">
-
-    <header>
-        <h1 class="logo">Edgar Coime</h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Resume</a></li>
-                <li><a href="#">PostCard</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="main-content">
-        <img width="200px" src="images/profilepicture.jpg" alt="My profile picture">
-
-        <p>My full name is Edgar Jaycinth Daclan Coime II, the prefix is officially included too. I know, I have a long name, and many of my friends often joke around about it. I also have a lot of nicknames such as E.J (Stands for my first and middle name) or even Egg (It’s a long story so maybe I’ll tell you in person) but I don’t prefer the food nickname though, Edgar is completely fine though whichever you prefer. I graduated Highschool in 2015 and took 2 years off to travel and take care of my mum. Afterward, I took an Electrical Foundations course in BCIT Burnaby campus thinking that would be the career path best suited for me. Turned out after finishing the course and working in the field that I didn’t enjoy it as much as I thought I would and so looked for other paths I could take.</p>
-
-
-        <a href="pdf/resume.pdf">Here is my Resume in PDF</a>
-    </div>
-
-    <div class="course-list">
+    <div class="wrapper">
     
-        <h2>List of courses I am taking</h2>
-        <ul>
-            <div class="courses class1"><a href="https://www.bcit.ca/study/outlines/20201086121">
-                <li>COMP.1100 CST Programming Fundamentals</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class2"><a href="https://www.bcit.ca/study/outlines/20201086130">
-                <li>COMP.1712 Business Analysis and System Design</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class3"><a href="https://www.bcit.ca/study/outlines/20201086126">
-                <li>COMP.1510 Programming Methods</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class4"><a href="https://www.bcit.ca/study/outlines/20201087569">
-                <li>COMP.1800 Projects 1</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class5"><a href="https://www.bcit.ca/study/outlines/20201086120">
-                <li>COMM.1116 Business Communications</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class6"><a href="https://www.bcit.ca/study/outlines/20201087561">
-                <li>COMP.1537 Web Development</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-
-            <div class="courses class7"><a href="https://www.bcit.ca/study/outlines/20201086123">
-                <li>COMP.1113 Applied Mathematics</li>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut impedit debitis quaerat rerum est voluptatum, illum praesentium nemo dolore voluptas?</p>
-            </a></div>
-        </ul>
+        <header>
+            <h1 class="logo">Edgar Coime</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Resume</a></li>
+                    <li><a href="#">PostCard</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <div class="main-content">
+            <img width="200px" src="images/profilepicture.jpg" alt="My profile picture">
+    
+            <p>My full name is Edgar Jaycinth Daclan Coime II, the prefix is officially included too. I know, I have a long name, and many of my friends often joke around about it. I also have a lot of nicknames such as E.J (Stands for my first and middle name) or even Egg (It’s a long story so maybe I’ll tell you in person) but I don’t prefer the food nickname though, Edgar is completely fine though whichever you prefer. I graduated Highschool in 2015 and took 2 years off to travel and take care of my mum. Afterward, I took an Electrical Foundations course in BCIT Burnaby campus thinking that would be the career path best suited for me. Turned out after finishing the course and working in the field that I didn’t enjoy it as much as I thought I would and so looked for other paths I could take.</p>
+    
+    
+            <a href="pdf/resume.pdf">Here is my Resume in PDF</a>
+        </div>
+    
+        <div class="course-list">
+        
+            <h2>List of courses I am taking</h2>
+            <ul>
+                <div class="courses class1"><a href="https://www.bcit.ca/study/outlines/20201086121">
+                    <li>COMP.1100 CST Programming Fundamentals</li>
+                    <p>This course covers topics of importance to new and continuing sudents on how to balance school and related activiities to enhance chances of success in their academic careers. The class will also present other topics of interest to CST students and introduce students to various support systems at BCIT.</p>
+                </a></div>
+    
+                <div class="courses class2"><a href="https://www.bcit.ca/study/outlines/20201086130">
+                    <li>COMP.1712 Business Analysis and System Design</li>
+                    <p>This course will focus on Computer systems concepts, processes and tools that professionals use to pland and develop information systems to industry standards. This will allow participants to be able to utilize the tools and methods commonly used in the tech industry to analyze, design, and implement information systems as confirmed by a term project.</p>
+                </a></div>
+    
+                <div class="courses class3"><a href="https://www.bcit.ca/study/outlines/20201086126">
+                    <li>COMP.1510 Programming Methods</li>
+                    <p>This hands-on course is the foundation for all future programming courses and complements COMP 1537 and COMP 1800. This course introduces fundamental concepts of programming icluding design, development, testing, debugging semple programs, as well as error-handling, and problem soving.</p>
+                </a></div>
+    
+                <div class="courses class4"><a href="https://www.bcit.ca/study/outlines/20201087569">
+                    <li>COMP.1800 Projects 1</li>
+                    <p>Students learn to work in a collaborative environment and complete a small-scale software project. The course will take students through the UX design process and will implement languages such as JavaScript, CSS, and HTML into their projects. This will help students to develop the necessary skills needed to thrive in the industry.</p>
+                </a></div>
+    
+                <div class="courses class5"><a href="https://www.bcit.ca/study/outlines/20201086120">
+                    <li>COMM.1116 Business Communications</li>
+                    <p>This course is aimed towards helping students communicate quickly, clearly, and effectively. It will teach students how to be a professional and efficient communicator at work.</p>
+                </a></div>
+    
+                <div class="courses class6"><a href="https://www.bcit.ca/study/outlines/20201087561">
+                    <li>COMP.1537 Web Development</li>
+                    <p>This course focuses on programming both front and back end for web application development. Students will learn how to operate and implement JavaScript on both the client-side and server-side. As well as how to implement the standard practices that are commonly used in the industry.</p>
+                </a></div>
+    
+                <div class="courses class7"><a href="https://www.bcit.ca/study/outlines/20201086123">
+                    <li>COMP.1113 Applied Mathematics</li>
+                    <p>This course is partially discrete mathematics, partially an introduction to linear equations. The purpose of this couse is to give a strong foundation for future technical and programming courses. The course is divided into three parts: (1) Boolean algebra and design of logic circuits; (2) number systems and data representation; and (3) functions, linear equations, vectors, and matrices.</p>
+                </a></div>
+            </ul>
+        </div>
+    
+        
+        <div class="picture-wrapper">
+            <div id="picture-group">
+                <h3>To conclude, click picture to see Computer science memes</h3>
+                <a href="https://www.reddit.com/r/ProgrammerHumor/">
+                    <img class="collage-image" src="images/laughemoji.JPEG" alt="laughing emoji">
+                </a>
+            </div>
+    
+            <div id="picture-group">
+                <h3>Please visit BCIT website by clicking picture!</h3>
+                <a href="https://bcit.ca">
+                    <img class="collage-image" src="images/bcitlogo.png" alt="BCIT logo">
+                </a>
+            </div>
+        </div>  
+    
     </div>
-    <h3>To conclude, click picture to see Computer science memes</h3>
-    <a href="https://www.reddit.com/r/ProgrammerHumor/">
-        <img src="images/laughemoji.JPEG" alt="laughing emoji">
-    </a>
-
-    <h3>Please visit BCIT website by clicking picture!</h3>
-    <a href="https://bcit.ca">
-        <img src="images/bcitlogo.png" alt="BCIT logo">
-    </a>
-
-</div>
 </body>
 </html>

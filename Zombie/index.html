@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zombie Hunter Game</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrapper">
+
+    <header>
+      <h1 class="logo">Edgar Coime</h1>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="card.html">PostCard</a></li>
+              <li><a href="Zombie/index.html">Zombie Game</a></li>
+          </ul>
+      </nav>
+    </header>
+
+    <audio id="zerg-death-audio" src="src/zergling/zerglingDeath.wav" preload="auto"></audio>
+    <audio id="in-game-bg-audio" src="src/background/zerg-one.mp3" preload="auto"></audio>
+    <audio id="main-theme-audio" src="src/menu/main-theme-title.mp3" preload="auto"></audio>
+    <audio id="zerg-victory-audio" src="src/menu/zerg-victory.mp3" preload="auto"></audio>
+
+    <div id="mainContainer">
+      <div class="top-menu menu">
+        <p id="score">Score: 0</p>
+        <p id="timerText">100</p>
+      </div>
+
+      <div id="spawnArea">
+        
+      </div>
+      
+      <!-- Opening menu to initialize game which disappears after start -->
+      <div id="start">
+        <img src="images/zergling.gif" alt="zergling" class="introZergling zergling"> 
+        <p id="gameStart">Start Game</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

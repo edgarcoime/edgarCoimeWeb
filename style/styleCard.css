@@ -1,0 +1,48 @@
+        /* Body styling */
+        body {
+            background-image: url(images/postcard/plainbackground.jpg);
+            background-color: black;
+            background-size: auto;
+        }
+        h1 {
+            text-align: center;
+            color: rgba(90, 145, 84, 0.966);
+        }
+        .wrapper {
+            background-color: aliceblue;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+
+
+        /* Baby yoda meme container and styles */
+        .container {
+            position: relative;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+        .container .text-block {
+            color: rgba(194, 194, 194, 0.979);
+            background: grey;
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color:rgba(75, 75, 75, 0.5);
+        }
+        .container h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        /* Set of 3 photos style */
+        .compilation {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .compilation img {
+            width: 100%;
+            margin-bottom: 15px;
+        }

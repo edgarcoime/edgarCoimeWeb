@@ -15,19 +15,19 @@ let bloodTimeOut = 10_000;
 
 // UI or Menu counters for user display
 let scoreCounter = 0;
-let gameTimer = 90;
+let gameTimer = 60;
 
 // DOM audio selectors
 const menuMusic = document.getElementById("main-theme-audio");
 const bgMusic = document.getElementById("in-game-bg-audio");
 const zergDeathSound = document.getElementById("zerg-death-audio");
-const zergDefeat = document.getElementById("zerg-defeat-audio");
+const terranVictory = document.getElementById("terran-win-audio");
 const zergVictory = document.getElementById("zerg-victory-audio");
 
 // Setting volume for sfx
 menuMusic.volume = 0.05;
 bgMusic.volume = 0.05;
-zergDefeat.volume = 0.1;
+terranVictory.volume = 0.1;
 zergVictory.volume = 0.1;
 
 function countdown() {
@@ -38,11 +38,13 @@ function countdown() {
         // ADD optional code to increment spawn rate here?? maybe??
         if (gameTimer === 0) {
             bgMusic.pause();
-            zergDefeat.play();
+            terranVictory.play();
             MAINCONTAINER.innerHTML = `
-            <h1 class='game-win'>VICTORY</h1>
-            <h2>We stopped the zerglings from getting through! We have fought off the Zerg invasion</h2>
-            <button class="button retry-button" onclick="window.location.reload()">Retry</button>`;
+            <div class="victory">
+              <h1 class='game-win'>VICTORY</h1>
+              <h2>You have stopped the zerglings from getting through! You have fought off the Zerg invasion</h2>
+              <p class="button retry-button" onclick="window.location.reload()">Retry</p>
+            </div>`;
             clearInterval(window.spawnGame);
             clearInterval(window.gameTime);
         }
@@ -80,9 +82,11 @@ function zergling(counter) {
                 bgMusic.pause();
                 zergVictory.play();
                 MAINCONTAINER.innerHTML = `
-                <h1 class='game-over'>GAME OVER</h1>\n
-                <h2>You allowed the Zerg swarm to surround and kill you</h2>\n
-                <button class="button retry-button" onClick="window.location.reload();">Retry</button>`;
+                <div class="defeat">
+                  <h1 class='game-over'>DEFEAT</h1>
+                  <h2>You allowed the Zerg swarm to surround and kill you</h2>
+                  <p class="button retry-button" onclick="window.location.reload()">Retry</p>
+                </div>`;
                 clearInterval(window.spawnGame);
                 clearInterval(window.gameTime);
                 clearInterval(horizontalMovement);
@@ -123,18 +127,6 @@ function death(zergling, intervalTimer) {
             SPAWNTHRESHOLD.removeChild(zergling)
         }, bloodTimeOut);
     }
-}
-
-function victoryScreen() {
-    console.log('none')
-}
-function defeatScreen() {
-    console.log('none')
-}
-function quitGamePage() {
-    // quit game refreshes the page after a certain amount of time so
-    // that we can display goodbye message to user
-    console.log('none')
 }
 
 function initializeGame() {

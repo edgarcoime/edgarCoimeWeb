@@ -5,7 +5,7 @@
 
 #mainContainer {
     position: relative;
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     width: 98%;
     height: 89vh;
     margin: 10vh auto 0;
@@ -46,7 +46,7 @@
 
 /*spawn are div to control where the elements will spawn and move*/
 #spawnArea {
-    background-color: grey;
+    /*background-color: grey;*/
     position: relative;
     width: 100%;
     height: 80%;
@@ -54,11 +54,11 @@
 }
 
 .zergling {
-    width: calc(50px + 4vw);
+    width: calc(50px + 3vw);
 }
 
 .death {
-    width: calc(50px + 4vw)
+    width: calc(50px + 3vw);
 }
 
 /*div to display quit button*/
@@ -69,8 +69,40 @@
     top: 5%;
 }
 
-
 .game-over {
     margin: auto auto;
     text-align: center;
+}
+
+/*victory screen*/
+.victory {
+    text-align: center;
+}
+
+.game-win {
+    font-size: calc(75px + 1vw);
+}
+
+.victory h2 {
+    font-size: 2em;
+}
+
+.retry-button {
+    display: inline-block;
+    padding: 10px;
+    margin-top: 20%;
+    font-size: calc(75px + 1vw);
+}
+
+/*defeat screen*/
+.defeat {
+    text-align: center;
+}
+
+.game-over {
+    font-size: calc(75px + 1vw);
+}
+
+.defeat h2 {
+    font-size: 2em;
 }

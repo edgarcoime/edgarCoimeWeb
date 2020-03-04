@@ -37,8 +37,8 @@ function countdown() {
         TIMERTEXT.textContent = gameTimer;
         // ADD optional code to increment spawn rate here?? maybe??
         if (gameTimer === 0) {
-            bgMusic.pause();
-            terranVictory.play();
+            // bgMusic.pause();
+            // terranVictory.play();
             MAINCONTAINER.innerHTML = `
             <div class="victory">
               <h1 class='game-win'>VICTORY</h1>
@@ -79,8 +79,8 @@ function zergling(counter) {
             //       Then when game-over conditions are met clear container div and show game over div instead.
             // when zerglings pass certain threshold game is over and user has loss
             if (parseFloat(zergling.style.left) > 95 && gameTimer > 0) {
-                bgMusic.pause();
-                zergVictory.play();
+                // bgMusic.pause();
+                // zergVictory.play();
                 MAINCONTAINER.innerHTML = `
                 <div class="defeat">
                   <h1 class='game-over'>DEFEAT</h1>
@@ -131,8 +131,8 @@ function death(zergling, intervalTimer) {
 
 function initializeGame() {
     MAINCONTAINER.removeChild(STARTGAME);
-    bgMusic.play();
-    menuMusic.pause();
+    // bgMusic.play();
+    // menuMusic.pause();
 
     // initializes score and game timer
     countdown();
@@ -146,7 +146,7 @@ function initializeGame() {
 }
 
 function main() {
-    menuMusic.play();
+    // menuMusic.play();
     STARTGAME.onclick = initializeGame;
 }
 

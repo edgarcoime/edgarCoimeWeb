@@ -25,10 +25,10 @@ const terranVictory = document.getElementById("terran-win-audio");
 const zergVictory = document.getElementById("zerg-victory-audio");
 
 // Setting volume for sfx
-menuMusic.volume = 0.05;
-bgMusic.volume = 0.05;
-terranVictory.volume = 0.1;
-zergVictory.volume = 0.1;
+// menuMusic.volume = 0.05;
+// bgMusic.volume = 0.05;
+// terranVictory.volume = 0.1;
+// zergVictory.volume = 0.1;
 
 function countdown() {
     TIMERTEXT.textContent = gameTimer;
